@@ -1,4 +1,4 @@
-package lecture2_finding_element;
+package lecture02_finding_element;
 
 public class FindingElementPractice {
 }

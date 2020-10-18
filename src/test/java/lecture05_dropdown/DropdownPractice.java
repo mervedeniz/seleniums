@@ -1,4 +1,4 @@
-package lecture5_dropdown;
+package lecture05_dropdown;
 
 public class DropdownPractice {
 }

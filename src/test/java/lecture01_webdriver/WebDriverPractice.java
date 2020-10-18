@@ -1,4 +1,4 @@
-package lecture1_webdriver;
+package lecture01_webdriver;
 
 public class WebDriverPractice {
 }

@@ -1,4 +1,4 @@
-package lecture8_alerts_modals;
+package lecture08_alerts_modals;
 
 public class AlertsPractice {
 }
