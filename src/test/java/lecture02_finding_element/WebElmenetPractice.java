@@ -13,6 +13,8 @@ public class WebElmenetPractice {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/form");
+
+
         WebElement firstNameInput = driver.findElement(By.cssSelector("input#first-name"));
 
         // sendKeys()
@@ -47,7 +49,6 @@ public class WebElmenetPractice {
             System.out.println("This is already selected, so do nothing, and move on...");
         }
 
-
     }
 
     public static void pause(int second ) {
@@ -57,7 +58,6 @@ public class WebElmenetPractice {
 
         }
     }
-
 
 }//end:class
 

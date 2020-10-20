@@ -34,8 +34,6 @@ public class FindingElementPractice {
 /*
     WebElement element = driver.findElement(By.id("signup");
     element.clear();
-
-
  */
 
 
