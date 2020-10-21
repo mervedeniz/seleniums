@@ -1,6 +1,7 @@
 package lecture02_finding_element;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ListPractice {
 
@@ -14,11 +15,8 @@ public class ListPractice {
         names.add("Ebony");  // 4
         names.add("Sofia");  // 5
 
-
         names.add(1, "Yuri");
-
         System.out.println(names);
-
 
 
         // add(data)      --> boolean
@@ -28,6 +26,5 @@ public class ListPractice {
         // size()         --> int: # of element in the array
         // get(idx)       --> data
         // isEmpty()      --> boolean
-
     }
 }

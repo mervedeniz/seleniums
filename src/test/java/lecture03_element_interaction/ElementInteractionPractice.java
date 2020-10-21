@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 import java.util.List;
 
@@ -27,8 +27,6 @@ public class ElementInteractionPractice {
 
         // 5. Sysout the number of images in the site
         System.out.println( "This site contains this many images : " +  imgList.size() );
-
-
 
     }
 }
