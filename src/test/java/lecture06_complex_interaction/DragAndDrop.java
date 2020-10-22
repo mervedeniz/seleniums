@@ -13,9 +13,9 @@ public class DragAndDrop {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("http://the-internet.herokuapp.com/drag_and_drop");
-        WebElement from = driver.findElement(By.cssSelector("div#column-a"));
-        WebElement to = driver.findElement(By.cssSelector("div#column-b"));
+        driver.get("https://jqueryui.com/droppable/");
+        WebElement from = driver.findElement(By.id("draggable"));
+        WebElement to = driver.findElement(By.id("droppable"));
         pause(2);
         Actions action = new Actions(driver);
         pause(2);
