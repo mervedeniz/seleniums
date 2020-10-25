@@ -6,7 +6,6 @@ import java.util.List;
 public class ListPractice {
 
     public static void main(String[] args) {
-
         List<String> names = new ArrayList<>();
         names.add("Josh");   // 0
         names.add("Anna");   // 1
@@ -17,7 +16,8 @@ public class ListPractice {
 
         names.add(1, "Yuri");
         System.out.println(names);
-
+        var name = "nijat";
+        System.out.printf(name);
 
         // add(data)      --> boolean
         // contains(data) --> boolean
