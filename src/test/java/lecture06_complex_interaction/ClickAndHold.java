@@ -7,30 +7,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-
-public class DragAndDrop {
+public class ClickAndHold {
 
     public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.get("http://webdriveruniversity.com/Actions/index.html#");
 
-        driver.get("http://webdriveruniversity.com/Actions/index.html");
-        driver.manage().window().maximize();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
-        WebElement from = driver.findElement(By.cssSelector("div#draggable  b"));
-        WebElement target = driver.findElement(By.cssSelector("#droppable"));
-
+        WebElement element = driver.findElement(By.cssSelector("div#click-box"));
         Actions actions = new Actions(driver);
-        actions.dragAndDrop(from,target);
-        actions.perform();
+        actions.clickAndHold(element)
+                .perform();
 
+        Thread.sleep(2000);
 
-        Thread.sleep(5000);
+        element.click();
 
+        Thread.sleep(3000);
         driver.quit();
-    }
 
+    }
 }

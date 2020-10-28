@@ -9,28 +9,32 @@ import org.openqa.selenium.interactions.Actions;
 
 import javax.swing.*;
 
-public class DragAndDrop {
+public class RightClick {
 
     public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.get("http://demo.guru99.com/test/simple_context_menu.html");
+        Thread.sleep(3000);
 
-        driver.get("http://webdriveruniversity.com/Actions/index.html");
-        driver.manage().window().maximize();
-        Thread.sleep(5000);
-
-        WebElement from = driver.findElement(By.cssSelector("div#draggable  b"));
-        WebElement target = driver.findElement(By.cssSelector("#droppable"));
+        WebElement element = driver.findElement(By.cssSelector(".context-menu-one"));
 
         Actions actions = new Actions(driver);
-        actions.dragAndDrop(from,target);
+        actions.contextClick(element);
         actions.perform();
 
+        Thread.sleep(3000);
 
-        Thread.sleep(5000);
+        WebElement cut = driver.findElement(By.cssSelector(".context-menu-icon-cut"));
+        cut.click();
+
+        Thread.sleep(3000);
 
         driver.quit();
-    }
 
+
+
+
+    }
 }
